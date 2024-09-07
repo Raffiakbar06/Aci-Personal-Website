@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Raffi Akbar Maulana</title>
+    <style>
+        /* Font Import */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #1a73e8, #4285f4);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            opacity: 0;
+            animation: fadeInUp 2s forwards;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInUp 3s forwards;
+        }
+
+        /* Button Animation */
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #1a73e8;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #4285f4;
+            color: white;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Content Section */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #1a73e8;
+        }
+
+        .card p {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Hobbies Section */
+        .hobbies {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Prospects Section */
+        .prospects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Performance Section */
+        .performance {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Rating Section */
+        .rating {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .rating h3 {
+            margin-bottom: 20px;
+        }
+
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .rating-stars span {
+            font-size: 2em;
+            color: gold;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Animation for person */
+        .person {
+            position: relative;
+            width: 150px;
+            margin: auto;
+            animation: movePerson 5s infinite;
+        }
+
+        @keyframes movePerson {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Muhamad Raffi Akbar Maulana</h1>
+        <p>Student at Universitas Pamulang, Kampus Serang</p>
+        <a href="#about" class="btn">Learn More About Me</a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Muhamad Raffi Akbar Maulana. I am passionate about technology, design, and continuous learning.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Creating responsive and engaging websites using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="card">
+                <h3>Graphic Design</h3>
+                <p>Designing stunning graphics with tools like Adobe Photoshop and Illustrator.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies">
+            <div class="card">
+                <h3>Photography</h3>
+                <p>Capturing moments and creating visual stories through my camera.</p>
+            </div>
+            <div class="card">
+                <h3>Coding</h3>
+                <p>Exploring new programming languages and solving coding challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="prospects">
+        <h2>Prospects</h2>
+        <div class="prospects">
+            <div class="card">
+                <h3>Front-End Developer</h3>
+                <p>Building user-friendly interfaces with modern web technologies.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Designer</h3>
+                <p>Creating intuitive and visually appealing user experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="performance">
+        <h2>Performance</h2>
+        <div class="performance">
+            <div class="card">
+                <h3>Project A</h3>
+                <p>Led the development of a dynamic website with high user engagement.</p>
+            </div>
+            <div class="card">
+                <h3>Project B</h3>
+                <p>Designed a series of marketing materials that increased brand visibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rating">
+        <h2>Client Ratings</h2>
+        <div class="rating">
+            <h3>Average Rating</h3>
+            <div class="rating-stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="animation">
+        <h2>Animated Person</h2>
+        <div class="person">
+            <!-- You can replace the following with an animated SVG or GIF -->
+            <img src="https://via.placeholder.com/150" alt="Animated Person" />
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Muhamad Raffi Akbar Maulana. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
